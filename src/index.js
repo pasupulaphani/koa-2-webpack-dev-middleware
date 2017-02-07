@@ -19,9 +19,8 @@ function middleware(doIt, req, res) {
 module.exports = (compiler, option) => {
   const doIt = expressMiddleware(compiler, option);
 
-  function* koaMiddleware(next) {
-    const ctx = this;
-    const { req } = ctx;
+  return function(ctx, next) {
+    const req = ctx.req;
 
     ctx.webpack = doIt;
 
@@ -35,7 +34,7 @@ module.exports = (compiler, option) => {
     });
 
     if (runNext) {
-      yield *next;
+      next();
     }
   }
 
