@@ -1,6 +1,6 @@
 # koa2-webpack-dev-middleware
 
-webpack dev middleware for koa
+webpack dev middleware for koa2
 
 [![node version][node-image]][node-url]
 

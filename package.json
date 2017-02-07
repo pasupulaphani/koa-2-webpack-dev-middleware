@@ -1,9 +1,10 @@
 {
   "name": "koa2-webpack-dev-middleware",
   "version": "1.4.4",
-  "description": "webpack dev middleware for koa",
+  "description": "webpack dev middleware for koa2",
   "keywords": [
     "koa",
+    "koa2",
     "webpack",
     "middleware"
   ],
