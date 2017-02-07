@@ -1,5 +1,5 @@
 {
-  "name": "koa2-webpack-dev-middleware",
+  "name": "koa-2-webpack-dev-middleware",
   "version": "1.4.4",
   "description": "webpack dev middleware for koa2",
   "keywords": [
@@ -12,14 +12,14 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://github.com/pasupulaphani/koa2-webpack-dev-middleware",
+  "homepage": "http://github.com/pasupulaphani/koa-2-webpack-dev-middleware",
   "author": "pasupulaphani@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pasupulaphani/koa2-webpack-dev-middleware.git"
+    "url": "git@github.com:pasupulaphani/koa-2-webpack-dev-middleware.git"
   },
   "bugs": {
-    "url": "http://github.com/pasupulaphani/koa2-webpack-dev-middleware/issues"
+    "url": "http://github.com/pasupulaphani/koa-2-webpack-dev-middleware/issues"
   },
   "engines": {
     "node": ">=6.0.0"
