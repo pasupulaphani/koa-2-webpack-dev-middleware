@@ -1,4 +1,4 @@
-# koa-webpack-dev-middleware
+# koa2-webpack-dev-middleware
 
 webpack dev middleware for koa
 
@@ -15,7 +15,7 @@ same with https://github.com/webpack/webpack-dev-middleware. will add original m
 
 ```js
 var app = require('koa')();
-var webpackMiddleware = require("koa-webpack-dev-middleware");
+var webpackMiddleware = require("koa2-webpack-dev-middleware");
 app.use(webpackMiddleware(...));
 app.get(function *() {
   this.body = this.webpack.fileSystem.readFileSync('index.html');
