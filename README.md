@@ -13,6 +13,12 @@ webpack dev middleware for koa2
 same with https://github.com/webpack/webpack-dev-middleware. will add original middleware to ctx.webpack
 
 
+**Install**
+
+```
+npm i koa-2-webpack-dev-middleware
+```
+
 ```js
 var app = require('koa')();
 var webpackMiddleware = require("koa-2-webpack-dev-middleware");
