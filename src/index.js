@@ -1,5 +1,3 @@
-'use strict';
-
 const expressMiddleware = require('webpack-dev-middleware');
 
 function middleware(doIt, req, res) {
@@ -24,18 +22,16 @@ module.exports = (compiler, option) => {
 
     ctx.webpack = doIt;
 
-    const runNext = yield middleware(doIt, req, {
-      end(content) {
-        ctx.body = content;
-      },
-      setHeader() {
-        ctx.set.apply(ctx, arguments);
-      }
+    return next().then(function () {
+      middleware(doIt, req, {
+        end(content) {
+          ctx.body = content;
+        },
+        setHeader() {
+          ctx.set.apply(ctx, arguments);
+        }
+      });
     });
-
-    if (runNext) {
-      next();
-    }
   }
 
   Object.keys(doIt).forEach(p => {
